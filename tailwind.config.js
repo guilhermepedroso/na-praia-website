@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -13,8 +13,8 @@ module.exports = {
       screens: {
         sm: "100%",
         md: "100%",
-        lg: "1024px",
-        xl: "1100px",
+        lg: "1200px",
+        xl: "1200px",
       },
     },
     fontFamily: {

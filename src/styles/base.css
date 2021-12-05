@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#__next {
+  height: 100%;
+}
+
 @font-face {
   font-family: "PraieiraUI";
   src: url("/fonts/PraieiraUI-Regular.woff2") format("woff2"),
