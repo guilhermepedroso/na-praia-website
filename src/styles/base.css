@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "PraieiraUI";
+  src: url("/fonts/PraieiraUI-Regular.woff2") format("woff2"),
+    url("/fonts/PraieiraUI-Regular.woff") format("woff"),
+    url("/fonts/PraieiraUI-Regular.svg#PraieiraUI-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PraieiraUI";
+  src: url("/fonts/PraieiraUI-Bold.woff2") format("woff2"),
+    url("/fonts/PraieiraUI-Bold.woff") format("woff"),
+    url("/fonts/PraieiraUI-Bold.svg#PraieiraUI-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PraieiraUI";
+  src: url("/fonts/PraieiraUI-Light.woff2") format("woff2"),
+    url("/fonts/PraieiraUI-Light.woff") format("woff"),
+    url("/fonts/PraieiraUI-Light.svg#PraieiraUI-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PraieiraUI";
+  src: url("/fonts/PraieiraUI-SemiBold.woff2") format("woff2"),
+    url("/fonts/PraieiraUI-SemiBold.woff") format("woff"),
+    url("/fonts/PraieiraUI-SemiBold.svg#PraieiraUI-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
