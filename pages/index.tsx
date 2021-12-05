@@ -18,12 +18,12 @@ export default function Home() {
 
             <div className="mt-24 grid md:grid-cols-2 items-center">
               <div className="mb-10">
-                {/* <div className="relative inline-flex items-center mb-12 py-4 pl-6 pr-14 text-brand300 bg-brand300 rounded-full bg-opacity-20 font-extralight">
-                App Na Praia{" "}
-                <span className="absolute right-6 top-[30px] ml-4 text-[22px] leading-[0]">
-                  📱
-                </span>
-              </div> */}
+                <div className="relative inline-flex items-center mb-12 py-4 pl-6 pr-14 text-brand300 bg-brand300 rounded-full bg-opacity-20 font-extralight">
+                  App Na Praia{" "}
+                  <span className="absolute right-6 top-[30px] ml-4 text-[22px] leading-[0]">
+                    📱
+                  </span>
+                </div>
                 <h1 className="text-7xl lg:text-8xl leading-[0.9] tracking-[-4px] font-bold whitespace-nowrap mb-8">
                   A praia na <br />
                   sua <span className="text-accent300">mão!</span>
