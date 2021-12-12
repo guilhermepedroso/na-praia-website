@@ -5,6 +5,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
+import { Header } from "../src/components/header";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

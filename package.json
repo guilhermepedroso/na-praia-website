@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.4.0",
     "axios": "^0.24.0",
     "next": "latest",
     "postcss-rename": "^0.6.0",

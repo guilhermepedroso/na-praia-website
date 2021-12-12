@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       text: "#000000",
+      gray: "#777777",
       brand300: "#C54380",
       accent300: "#F0C671",
       white: "#fff",
@@ -25,5 +26,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
