@@ -6,7 +6,7 @@ import Image from "next/image";
 // };
 
 export const AboutApp = () => (
-  <div className="text-center mb-16 md:mb-32">
+  <div id="about" className="text-center mb-16 md:mb-32">
     <p className="text-brand300 text-1xl md:text-2xl mb-4">NaPraia</p>
     <h3 className="text-3xl md:text-5xl font-bold mb-4 tracking-[-1px]">
       Seu APP favorito para <br /> Delivery na praia
@@ -15,11 +15,13 @@ export const AboutApp = () => (
     <div className="grid md:grid-cols-3 gap-12 md:gap-4">
       <div>
         <div className="border-b-[1px] border-[#C4C4C4] mb-8">
-          <div className="relative w-[255px] h-[248px] m-auto ">
+          <div className="relative w-full max-w-[360px] m-auto ">
             <Image
-              src="https://dummyimage.com/255x248"
-              layout="fill"
+              src="/images/facil-de-usar.png"
+              layout="responsive"
               alt="fácil de usar"
+              width="360"
+              height="255"
             />
           </div>
         </div>
@@ -34,11 +36,13 @@ export const AboutApp = () => (
       </div>
       <div>
         <div className="border-b-[1px] border-[#C4C4C4] mb-8">
-          <div className="relative w-[255px] h-[248px] m-auto">
+          <div className="relative w-full max-w-[360px] m-auto">
             <Image
-              src="https://dummyimage.com/255x248"
-              layout="fill"
+              src="/images/rapido-na-entrega.png"
+              layout="responsive"
               alt="fácil de usar"
+              width="360"
+              height="255"
             />
           </div>
         </div>
@@ -53,11 +57,13 @@ export const AboutApp = () => (
       </div>
       <div>
         <div className="border-b-[1px] border-[#C4C4C4] mb-8">
-          <div className="relative w-[255px] h-[248px] m-auto">
+          <div className="relative w-full max-w-[360px] m-auto">
             <Image
-              src="https://dummyimage.com/255x248"
-              layout="fill"
+              src="/images/qualidade.png"
+              layout="responsive"
               alt="fácil de usar"
+              width="360"
+              height="255"
             />
           </div>
         </div>

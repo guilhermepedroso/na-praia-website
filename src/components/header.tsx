@@ -10,6 +10,23 @@ import Link from "next/link";
 export const Header = () => {
   const [open, setOpen] = React.useState(false);
 
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.querySelector("body")!.addEventListener("click", (e: any) => {
+        const hasDataTarget = e.target.getAttribute("data-target");
+        if (!!hasDataTarget) {
+          const target = document.querySelector(hasDataTarget);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 20,
+              behavior: "smooth",
+            });
+          }
+        }
+      });
+    }
+  }, []);
+
   const activeClass = "hover:underline hover:text-brand300";
 
   return (
@@ -47,14 +64,42 @@ export const Header = () => {
               open ? "grid" : "hidden"
             } bg-[#fff] shadow-lg lg:shadow-none z-20 p-16 lg:p-0 absolute top-[74px] left-0 w-full lg:w-auto lg:top-0 lg:relative text-gray lg:grid grid-flow-row lg:grid-flow-col gap-12`}
           >
-            <button className={`${activeClass}`}>Home</button>
-            <button className={`${activeClass}`}>Na Praia</button>
-            <button className={`${activeClass}`}>Vendedores</button>
-            <button className={`${activeClass}`}>Download</button>
-            <button className={`${activeClass}`}>Contato</button>
+            {nav.map((i) => (
+              <button
+                key={i.name}
+                data-target={i.dataTarget}
+                className={`${activeClass}`}
+                onClick={() => {
+                  setOpen((prevCheck) =>
+                    !!prevCheck ? !prevCheck : prevCheck
+                  );
+                }}
+              >
+                {i.name}
+              </button>
+            ))}
           </div>
         </div>
       </Wrapper>
     </header>
   );
 };
+
+const nav = [
+  // {
+  //   name: "Home",
+  //   dataTarget: "",
+  // },
+  {
+    name: "Na Praia",
+    dataTarget: "#about",
+  },
+  {
+    name: "Vendedores",
+    dataTarget: "#contato",
+  },
+  {
+    name: "Contato",
+    dataTarget: "#contato",
+  },
+];
