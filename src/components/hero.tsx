@@ -20,7 +20,12 @@ export const Hero = () => (
       </h2>
 
       <div className="mb-6 flex flex-row">
-        <a href="" className="inline-block max-w-[175px] mr-5">
+        <a
+          rel="noreferrer"
+          href="https://apps.apple.com/br/app/napraia-app/id1597507726"
+          target="_blank"
+          className="inline-block max-w-[175px] mr-5"
+        >
           <Image
             src="/images/app-store.png"
             width="175"
@@ -30,7 +35,11 @@ export const Hero = () => (
             className=""
           />
         </a>
-        <a href="" className="inline-block max-w-[175px]">
+        <a
+          rel="noreferrer"
+          href="https://play.google.com/store/apps/details?id=com.na.praia"
+          className="inline-block max-w-[175px]"
+        >
           <Image
             src="/images/google-play.png"
             layout="intrinsic"
