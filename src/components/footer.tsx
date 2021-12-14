@@ -25,7 +25,7 @@ export const Footer = () => {
           </div>
           <div>
             <a
-              href="https://napraia.app"
+              href="https://pt-br.facebook.com/NaPraiaApp/"
               target="_blank"
               rel="noreferrer"
               className="mr-2"
@@ -38,7 +38,11 @@ export const Footer = () => {
                 height="24"
               />
             </a>
-            <a href="https://napraia.app" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/napraiaapp/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/images/instagram.svg"
                 layout="fixed"
