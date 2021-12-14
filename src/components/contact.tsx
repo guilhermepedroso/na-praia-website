@@ -132,9 +132,6 @@ export function ErrorMessage(props) {
       {props.errors[props.index]?.type === "required" && (
         <div>Campo obrigatório</div>
       )}
-      {props.errors[props.index]?.message && (
-        <div>{props.errors[props.index].messsage}</div>
-      )}
     </div>
   );
 }
@@ -147,6 +144,8 @@ export const Contact = () => {
     reset,
     formState: { errors },
   } = useForm({
+    mode: "onBlur",
+    reValidateMode: "onChange",
     criteriaMode: "all",
   });
 
@@ -168,6 +167,7 @@ export const Contact = () => {
               state,
               products,
               phoneNumber,
+              timestamp: new Date(),
             },
           }),
         }
@@ -182,8 +182,6 @@ export const Contact = () => {
       setLoading(false);
     }
   };
-
-  console.log(errors);
 
   return (
     <div id="contato" className="grid md:grid-cols-3">
@@ -239,14 +237,26 @@ export const Contact = () => {
               <div>Telefone:</div>
               <InputMask
                 mask="(99) 999999999"
-                maskChar="_"
+                maskChar=""
                 type="text"
                 className="w-full rounded-md"
                 {...register("phoneNumber", {
                   required: true,
+                  validate: (props) => {
+                    const str = props.replace(/\(|\)\s*/g, "").length;
+
+                    console.log(str);
+
+                    return str < 10 ? "Error" : true;
+                  },
                 })}
               />
-              <ErrorMessage errors={errors} index="phoneNumber" />
+
+              {errors["phoneNumber"]?.message ? (
+                <div className="text-sm pt-2">Telefone inválido</div>
+              ) : (
+                <ErrorMessage errors={errors} index="phoneNumber" />
+              )}
             </label>
           </fieldset>
           <fieldset className="grid md:grid-cols-3 gap-5 mb-5">
