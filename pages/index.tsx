@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="title" content="Na Praia | A praia agora é digital!" />
         <meta
           name="description"
-          content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
+          content="Agora ficou fácil curtir um dia de sol no lugar favorito do brasileiro. Vem curtir NaPraia!"
         />
 
         {/* <meta property="og:type" content="article" />
