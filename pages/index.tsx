@@ -18,17 +18,17 @@ export default function Home() {
           content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
         />
 
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://napraia.app/" />
-        <meta
+        {/* <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://napraia.app/" /> */}
+        {/* <meta
           property="og:title"
           content="Na Praia | A praia agora é digital!"
         />
         <meta
           property="og:description"
           content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
-        />
-        <meta property="og:image" content="https://www.napraia.app/cover.jpg" />
+        /> */}
+        {/* <meta property="og:image" content="https://www.napraia.app/cover.jpg" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://napraia.app/" />
@@ -43,7 +43,7 @@ export default function Home() {
         <meta
           property="twitter:image"
           content="https://www.napraia.app/cover.jpg"
-        />
+        /> */}
       </Head>
       <Wrapper>
         <Hero />
