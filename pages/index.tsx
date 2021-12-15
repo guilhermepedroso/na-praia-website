@@ -12,7 +12,6 @@ export default function Home() {
     <>
       <Head>
         <title>Na Praia | A praia agora é digital!</title>
-
         <meta
           name="description"
           content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
@@ -32,7 +31,7 @@ export default function Home() {
           content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
         />
         <meta property="og:site_name" content="Na Praia " />
-        <meta property="og:image" content="/hero.png"></meta>
+        {/* <meta property="og:image" content="/hero.png"></meta> */}
       </Head>
       <Wrapper>
         <Hero />
