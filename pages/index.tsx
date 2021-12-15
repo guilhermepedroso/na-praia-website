@@ -18,7 +18,7 @@ export default function Home() {
           content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
         />
 
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
         <meta property="og:url" content="https://napraia.app/" />
         <meta
           property="og:title"
