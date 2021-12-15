@@ -25,8 +25,10 @@ export const AppDownload = () => (
 
           <div className="mb-6 flex flex-row">
             <a
-              rel="noreferrer"
-              href="https://apps.apple.com/br/app/napraia-app/id1597507726"
+              href=""
+              // rel="noreferrer"
+              // target="_blank"
+              // href="https://apps.apple.com/br/app/napraia-app/id1597507726"
               className="inline-block max-w-[175px] mr-5"
             >
               <Image
@@ -39,8 +41,10 @@ export const AppDownload = () => (
               />
             </a>
             <a
-              rel="noreferrer"
-              href="https://play.google.com/store/apps/details?id=com.na.praia"
+              href=""
+              // rel="noreferrer"
+              // href="https://play.google.com/store/apps/details?id=com.na.praia"
+              // target="_blank"
               className="inline-block max-w-[175px]"
             >
               <Image

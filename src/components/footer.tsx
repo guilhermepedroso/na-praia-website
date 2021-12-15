@@ -56,11 +56,14 @@ export const Footer = () => {
       </Wrapper>
       <Wrapper>
         <div className="flex md:items-center justify-between text-sm mt-4 flex-col md:flex-row-reverse">
-          <Link href="/politica-de-privacidade" passHref>
-            <a className="hover:underline mb-4 md:mb-0">
-              Política de Privacidade
-            </a>
-          </Link>
+          <div>
+            <div className="md:inline mb-2 md:mr-4">contato@napraia.app</div>
+            <Link href="/politica-de-privacidade" passHref>
+              <a className="hover:underline mb-2 md:mb-0 block md:inline">
+                Política de Privacidade
+              </a>
+            </Link>
+          </div>
           <div className="">NaPraia© 2021 - Todos os direitos reservados</div>
         </div>
       </Wrapper>

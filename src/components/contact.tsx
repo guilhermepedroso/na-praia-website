@@ -212,7 +212,7 @@ export const Contact = () => {
         <p className="text-brand300 text-lg">Cadastre-se agora:</p>
         {contactSend === "success" && (
           <div className="mt-2 mb-3 p-2 text-sm rounded-md text-[#0f5132] border-[1px] border-[#badbcc] bg-[#d1e7dd]">
-            Cadastro realizado com sucesso.
+            Cadastro realizado com sucesso! Em breve entraremos em contato.
           </div>
         )}
         {contactSend === "error" && (

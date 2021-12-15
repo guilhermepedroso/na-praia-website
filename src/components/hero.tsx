@@ -6,24 +6,24 @@ import Image from "next/image";
 // };
 
 export const Hero = () => (
-  <div className="mt-12 md:mt-24 mb-16 md:mb-32 grid md:grid-cols-2 items-center">
+  <div className="mt-12 md:mt-20 mb-16 md:mb-32 grid md:grid-cols-2 items-center">
     <div className="mb-10">
-      <div className="text-brand300 mb-6">App Na Praia</div>
       <h1 className="text-5xl lg:text-7xl leading-[0.9] text-[#2E2E2E] tracking-[-2px] md:tracking-[-4px] font-bold whitespace-nowrap mb-5">
         A praia agora <br />é <span className="text-accent300">digital!</span>
       </h1>
 
-      <h2 className="text-gray text-lg mb-6">
+      <h1 className="text-gray text-lg mb-6">
         Agora ficou fácil curtir um dia de sol no lugar{" "}
         <br className="hidden md:inline-block" />
         favorito do brasileiro. Vem curtir NaPraia!
-      </h2>
+      </h1>
 
       <div className="mb-6 flex flex-row">
         <a
-          rel="noreferrer"
-          href="https://apps.apple.com/br/app/napraia-app/id1597507726"
-          target="_blank"
+          href=""
+          // rel="noreferrer"
+          // href="https://apps.apple.com/br/app/napraia-app/id1597507726"
+          // target="_blank"
           className="inline-block max-w-[175px] mr-5"
         >
           <Image
@@ -36,8 +36,10 @@ export const Hero = () => (
           />
         </a>
         <a
-          rel="noreferrer"
-          href="https://play.google.com/store/apps/details?id=com.na.praia"
+          href=""
+          // rel="noreferrer"
+          // href="https://play.google.com/store/apps/details?id=com.na.praia"
+          // target="_blank"
           className="inline-block max-w-[175px]"
         >
           <Image
