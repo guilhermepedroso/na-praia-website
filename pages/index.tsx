@@ -24,8 +24,8 @@ export default function Home() {
           property="og:title"
           content="Na Praia | A praia agora é digital!"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.napraia.app" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="https://www.napraia.app/" />
         <meta
           property="og:description"
           content="Agora ficou fácil curtir um dia de sol no luga favorito do brasileiro. Vem curtir NaPraia!"
