@@ -12,10 +12,9 @@ export default function Home() {
     <>
       <Head>
         <title>Na Praia | A praia agora é digital!</title>
-        <meta name="title" content="Na Praia | A praia agora é digital!" />
         <meta
           name="description"
-          content="Agora ficou fácil curtir um dia de sol no lugar favorito do brasileiro. Vem curtir NaPraia!"
+          content="Seu APP favorito para delivery na praia!"
         />
 
         {/* <meta property="og:type" content="article" />
