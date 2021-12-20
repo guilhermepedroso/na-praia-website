@@ -1,16 +1,21 @@
+import { AppProps } from "next/dist/shared/lib/router/router";
 import "tailwindcss/tailwind.css";
 import { Footer } from "../src/components/footer";
 import { Header } from "../src/components/header";
 import "../src/styles/base.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
-      <Header />
+      {!router.query.webview && <Header />}
       <Component {...pageProps} />
-      <Footer />
+      {!router.query.webview && <Footer />}
     </>
   );
 }
+
+MyApp.getInitialProps = async (appContext) => {
+  return {};
+};
 
 export default MyApp;
