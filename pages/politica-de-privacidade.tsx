@@ -299,7 +299,6 @@ export default function Terms() {
           </p>
         </div>
       </Wrapper>
-      <AppDownload />
     </>
   );
 }

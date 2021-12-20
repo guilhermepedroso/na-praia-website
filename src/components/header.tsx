@@ -2,6 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 import { Wrapper } from "./wrapper";
 import Link from "next/link";
+import { useRouter } from "next/dist/client/router";
 
 // type Props = {
 //   children?: React.ReactNode;
