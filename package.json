@@ -14,6 +14,7 @@
     "postcss-rename": "^0.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-gtm-module": "^2.0.11",
     "react-hook-form": "^7.22.0",
     "react-input-mask": "^2.0.4",
     "yup": "^0.32.11"
