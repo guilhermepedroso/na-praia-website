@@ -20,7 +20,7 @@ export const pageView = (path: string) => {
 function MyApp({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     TagManager.initialize({
-      gtmId: "G-4LNEPTFW4R",
+      gtmId: "GTM-W79V3PK",
     });
   }, []);
 
