@@ -41,10 +41,9 @@ export const AppDownload = () => (
               />
             </a>
             <a
-              href=""
-              // rel="noreferrer"
-              // href="https://play.google.com/store/apps/details?id=com.na.praia"
-              // target="_blank"
+              rel="noreferrer"
+              href="https://play.google.com/store/apps/details?id=com.na.praia&hl=pt&gl=BR"
+              target="_blank"
               className="inline-block max-w-[175px]"
             >
               <Image
